@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:descendantFocusability="blocksDescendants"
+    tools:context="com.example.jashwanth.bunkmanager.MainActivity"
+    android:padding="0dp">
+
+
+    <Button
+        android:text="attend"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:id="@+id/attendButton"
+        android:onClick="attend"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@android:color/holo_blue_bright" />
+
+    <Button
+        android:text="Skip"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/skipButton"
+        android:onClick="skip"
+        android:layout_below="@+id/attendButton"
+        android:layout_alignStart="@+id/attendButton"
+        android:backgroundTint="@android:color/holo_red_light" />
+
+    <Button
+        android:text="undo"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/undoButton"
+        android:onClick="undo"
+        android:layout_below="@+id/skipButton"
+        android:layout_alignStart="@+id/skipButton" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/holo_purple" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_below ="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:textColor="?android:attr/colorPrimaryDark" />
+
+</RelativeLayout>
